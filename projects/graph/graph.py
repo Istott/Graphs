@@ -22,7 +22,7 @@ class Graph:
         if v1 in self.vertices and v2 in self.vertices:
             self.vertices[v1].add(v2)
         else:
-            raise IndexError("cant make connection")
+            raise IndexError("That vertex does not exist!")
 
     def get_neighbors(self, vertex_id):
         """
